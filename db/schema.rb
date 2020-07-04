@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_06_30_114455) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name", limit: 100, default: "", null: false
+    t.string "name", limit: 50, default: "", null: false
     t.string "self_introduction", limit: 500
     t.integer "sex", default: 0, null: false
     t.string "img_name"
