@@ -4,5 +4,5 @@ class ReactionsController < ApplicationController
     reaction.update_attributes(
       status: params[:reaction]
     )
-
+  end
 end
