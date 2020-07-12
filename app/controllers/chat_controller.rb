@@ -9,7 +9,7 @@ class ChatController < ApplicationController
     if chat_room.blank?
      
       # chat_roomsテーブルにレコードを作成
-      @chat_room = ChatRoom.create
+      chat_room = ChatRoom.create
       ChatRoomUser.create(chat_room: chat_room, user_id: current_user.id)
       ChatRoomUser.create(chat_room: chat_room, user_id: params[:user_id])
       
